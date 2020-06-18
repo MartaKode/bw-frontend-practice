@@ -45,7 +45,7 @@ function App() {
   </Route>
 <PrivateRoute exact path='/protectedClient' />
 
-<PrivateRoute exact path='protectedBusiness' />
+<PrivateRoute exact path='/protectedBusiness' />
 
 </Switch>
     </div>

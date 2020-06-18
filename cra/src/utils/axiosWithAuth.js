@@ -8,6 +8,6 @@ const token = window.localStorage.getItem('token')
     headers: {
       authorization: token
     },
-    baseURL: ''
+    baseURL: 'https://food-bw-practice-backend.herokuapp.com/api'
   })
 }
