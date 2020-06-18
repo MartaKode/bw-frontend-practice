@@ -51,11 +51,11 @@ const BusinessForm = () => {
         <>
       <form onSubmit={pathname.includes('/register') ? handleSubmit(handleRegister) : handleSubmit(handleLogin)}>
         <input type="text" placeholder="Username" name="username" ref={register({required: true, maxLength: 80})} />
-        <input type="password" placeholder="Password" name="password" ref={register({required: true, minLength: 5})} />
+        <input type="password" placeholder="Password" name="password" ref={register({required: true, minLength: 4})} />
         {
         pathname.includes('register') &&
         <>
-            <input type="password" placeholder="Re-enter Password" name="password_verify" ref={register({required: true, minLength: 5})} />
+            <input type="password" placeholder="Re-enter Password" name="password_verify" ref={register({required: true, minLength: 4})} />
             <input type="text" placeholder="Email" name="email" ref={register({required: true, pattern: /^\S+@\S+$/i})} />
             <input type="text" placeholder="First name" name="first_name" ref={register({required: false, maxLength: 80})} />
             <input type="text" placeholder="Last name" name="last_name" ref={register({required: false, maxLength: 100})} />
